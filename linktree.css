@@ -1,0 +1,148 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:indigo;
+    background-color: antiquewhite;
+    background-image: url('dot_bg.jpg');
+    background-size:  15%;
+    background-repeat:repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+  }
+
+section {
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+a {
+  display: flex;
+  justify-content: left;
+}
+
+a:hover {
+    background-color: indigo;
+    color:darksalmon;
+    border-radius: 30px;
+  }
+
+a.anc_class {
+    width: 300px;
+    text-decoration: none;
+  }
+
+social {
+    background-color:bisque;
+    margin: 1em;
+  }
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 20%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: darksalmon;
+}
+
+.link_container {
+  background-color: bisque;
+  border-radius: 30px;
+  width: 300px;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* id list */
+
+#icon_img {
+  margin: 1em;
+  width: 10%;
+}
+
+/* contact form */
+.contact-us {
+  background-color: bisque ;
+  padding: 50px 50px;
+  border-radius: 50px;
+  box-shadow: 15px 15px 1px form-shadow, 15px 15px 1px 2px indigo(0,0,0,1);
+}
+
+input, select {
+  display: block;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 10px 5px 10px 20px;
+  outline: none;
+  color: indigo;
+  margin: 10px;
+}
+  
+input:focus {
+  background-color:rgb(241, 178, 130);
+}
+
+#top_info {
+  display: flex;
+}
+
+::placeholder{
+  color:rgb(138, 119, 154);
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  resize: none;
+}
+
+button {
+  margin-top: 10px;
+  transition: transform 0.7s ease-in-out;
+  background-color: indigo;
+  border-radius: 20px;
+}
+
+#mail_img {
+  width: 40px;
+  height: 40px;
+}
+
+button:hover {
+  transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
