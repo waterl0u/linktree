@@ -30,7 +30,6 @@
             <h1>Melanie Lou</h1>
         </div>
     </header>
-
     <section>
         <h3>Let's get Social!</h3>
         <div class="link_container">
@@ -73,11 +72,11 @@
             </a>
         </div>
     </section>
-    <section class="form">
+    <section>
         <div class="contact-us">
             <form>
                 <h3>Share your thoughts.</h3>
-                <div id="top_info">
+                <div class="contact_input">
                     <input placeholder="Name" type="text"  required>
                     <select id="country" name="country" class="form-control">
                     <option value="Afghanistan">Afghanistan</option>
@@ -323,22 +322,19 @@
                     <option value="Western Sahara">Western Sahara</option>
                     <option value="Yemen">Yemen</option>
                     <option value="Zambia">Zambia</option>
-                    <option value="Zimbabwe">Zimbabwe</option>
-                    </select>
-                </div>
-                <div id="top_info">
-                    <input placeholder="Subject" type="text" required>
+                    <option value="Zimbabwe">Zimbabwe</option></select>
                     <input placeholder="Email" type="email" name="customerEmail" required>
+                    <input placeholder="Subject" type="text" required>
                 </div>
-                <textarea id="thoughts" name="Thoughts" placeholder="Your thoughts here.."></textarea>
+                <div>
+                    <textarea id="thoughts" name="Thoughts" placeholder="Your thoughts here..">
+                    </textarea>
+                </div>
+                <button type="submit">
+                    <img src="mail_icon.png" alt="Send" id="mail_img" href="mailto:jumalon.melanielou@gmail.com">
+                </button>
             </form>
-            <button type="submit">
-                <!-- <a href="mailto:jumalon.melanielou@gmail.com"> -->
-                    <img src="mail_icon.png" alt="Send" id="mail_img">
-                </a>
-            </button>
-          </div>
-          
+        </div>    
     </section>
 </body>
 <footer>

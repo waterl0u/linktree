@@ -19,17 +19,22 @@ header {
     justify-content: center;
     align-items: center;
     margin: 50px;
-
   }
 
 section {
-    width: 500px;
-    border-radius: 20px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
   }
+
+.link_container {
+  background-color: bisque;
+  border-radius: 30px;
+  width: 60%;
+  margin: 10px;
+}
 
 a {
   display: flex;
@@ -43,7 +48,7 @@ a:hover {
   }
 
 a.anc_class {
-    width: 300px;
+    width: 100%;
     text-decoration: none;
   }
 
@@ -64,20 +69,7 @@ footer {
   border-color: darksalmon;
 }
 
-.link_container {
-  background-color: bisque;
-  border-radius: 30px;
-  width: 300px;
-  margin: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 /* id list */
-
 #icon_img {
   margin: 1em;
   width: 10%;
@@ -86,29 +78,35 @@ form {
 /* contact form */
 .contact-us {
   background-color: bisque ;
-  padding: 50px 50px;
+  width: 80%;
+  padding: 20px;
   border-radius: 50px;
-  box-shadow: 15px 15px 1px form-shadow, 15px 15px 1px 2px indigo(0,0,0,1);
+  display: flex;
+  /* flex-flow: column wrap; */
+  flex-direction: column;
+  justify-content: center;
 }
 
-input, select {
-  display: block;
-  width: 80%;
+.contact_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, select, .form-control {
+  display: flex;
+  width: 60%;
   border: none;
   border-radius: 10px;
   background-color: antiquewhite;
-  padding: 10px 5px 10px 20px;
+  padding: 10px 10px 10px 20px;
   outline: none;
   color: indigo;
   margin: 10px;
 }
-  
+
 input:focus {
   background-color:rgb(241, 178, 130);
-}
-
-#top_info {
-  display: flex;
 }
 
 ::placeholder{
@@ -118,13 +116,14 @@ input:focus {
 textarea {
   width: 80%;
   height: 100px;
-  padding: 12px 20px;
+  padding: 10px 10px 10px 20px;
   border-radius: 10px;
   background-color: antiquewhite;
   resize: none;
 }
 
 button {
+  width: 70px;
   margin-top: 10px;
   transition: transform 0.7s ease-in-out;
   background-color: indigo;
@@ -140,17 +139,14 @@ button:hover {
   transform: rotate(360deg);
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
 }
+
+/* .link_container {
+  text-overflow: none;
+} */
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
