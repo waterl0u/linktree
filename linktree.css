@@ -23,7 +23,7 @@ header {
 
 section {
     width: 80%;
-    max-width: 300px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
