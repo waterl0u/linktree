@@ -1,3 +1,43 @@
+let latte = {
+    foam: "low foam",
+    iced: false,
+    milk: "lactose free",
+    shots: 4,
+    size: "quadrple venti",
+    sugar: "yes",
+    syrup: "pumpkin spice",
+    fullOrder: () => {
+        return `${latte.foam} ${latte.milk}`;
+    }
+};
+
+const thingIWantToFind = "shots"
+console.log(latte.foam);
+console.log(latte[thingIWantToFind]);
+
+console.log(latte["size"]);
+console.log(latte.fullOrder());
+
+function froth(latteOrder) {
+    latteOrder.isFrothed = true
+}
+
+froth(latte);
+console.log(latte);
+
+
+
+
+let frappachino = {};
+frappachino.whippedCream = "oodels of whipped cream!!"
+console.log(frappachino.whippedCream);
+
+// delete frappachino.whippedCream;
+frappachino.whippedCream = "a pup cup of whipped cream~" //-- changing the value
+console.log(frappachino.whippedCream);
+
+
+
 // let myName = 'Melanie';
 // let myAge = 38;
 // console.log(`My name is ${myName} and I am ${myAge} years old.`)
@@ -34,15 +74,15 @@
 // let b = 2;
 // console.log(a + b);
 
-let firstName = 'melanie';
-let lastName = 'jumalon';
-let fullName = `${firstName} ${lastName}`;
+// let firstName = 'melanie';
+// let lastName = 'jumalon';
+// let fullName = `${firstName} ${lastName}`;
 // console.log(firstName.toUpperCase());
 // console.log(firstName.length);
 // console.log(firstName[0]);
 
-let nameReversed = fullName.split("").reverse("").join("")
-console.log(nameReversed)
+// let nameReversed = fullName.split("").reverse("").join("")
+// console.log(nameReversed)
 
 
 // let someString = "4";
